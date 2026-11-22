@@ -1,7 +1,7 @@
-# BeatStreamPrices site
+# LiveComps site
 
-Static pages for the BeatStreamPrices iPhone app: privacy policy, terms of use and support.
-Live at https://beatstreamprices.scheiberintelligence.com
+Static pages for the LiveComps iPhone app: privacy policy, terms of use and support.
+Live at https://livecomps.scheiberintelligence.com
 
 ## Layout
 - `public/` holds the pages (index, privacy, terms, support) and `_headers`.
