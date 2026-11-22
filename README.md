@@ -9,7 +9,6 @@ Live at https://beatstreamprices.scheiberintelligence.com
 
 ## Before the first deploy
 Replace these placeholders in `public/`. Search with: `grep -rn "\[YOUR\|\[the State\|\[Ada" public`
-- `[YOUR LEGAL NAME OR BUSINESS NAME]` in privacy.html and terms.html
 - `[YOUR SUPPORT EMAIL]` in privacy.html, terms.html and support.html
 - `[the State of Idaho]` and `[Ada County, Idaho]` in terms.html
 
