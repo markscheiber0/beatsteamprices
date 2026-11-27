@@ -27,7 +27,7 @@ nav a{margin-right:1rem}
 
 <h2>What the app stores on your iPhone</h2>
 <ul>
-<li><strong>Optional keys.</strong> If you add a Poketrace or PokemonPriceTracker key, or your own Claude key, it is stored in the iOS Keychain on your device. It is never written into the app's files and we never receive it.</li>
+<li><strong>Optional keys.</strong> If you add a Poketrace or PokemonPriceTracker key, it is stored in the iOS Keychain on your device. It is never written into the app's files and we never receive it.</li>
 <li><strong>Install code.</strong> The first time you read a card, the app makes a random code and keeps it in the Keychain. It is not linked to your name, Apple ID or contacts. It lets the server count your free daily reads. Erase all my data leaves this code in place, so erasing cannot reset your free reads. It is removed when you delete the app and iOS clears its Keychain items.</li>
 <li><strong>Your scan log.</strong> Each card you look up is saved on your device with its name, set, number, Near Mint price and the time. You can delete entries in the app.</li>
 <li><strong>Your collection.</strong> If you tap Add to collection, the card, its condition, how many you own, the price you say you paid, and the card's prices at that moment are saved on your device. They are never sent to us. You can edit or delete them in the app.</li>
@@ -44,14 +44,12 @@ nav a{margin-right:1rem}
 <li><strong>Subscription proof.</strong> If you subscribe, the app sends Apple's signed receipt for your subscription so the server can confirm it is active and give you the higher daily limit. The server checks Apple's signature. We do not store it, and we do not receive your name, Apple ID or payment details. Apple handles the payment.</li>
 <li><strong>Cloudflare</strong> processes requests as our hosting provider and sees your network address as part of any internet request.</li>
 </ul>
-<p>If you save your own Claude key in Settings under Advanced, the app skips our server and sends the picture straight to Anthropic with your key instead.</p>
-
 <h2>What is sent to other companies, and when</h2>
 <p>The app sends data only when you tap Capture, Look up price or Take photo, and only to the services below.</p>
 <table>
 <tr><th>Service</th><th>What is sent</th><th>Why</th></tr>
 <tr><td>LiveComps server (Cloudflare), livecomps-api.scheiberintelligence.com</td><td>One reduced-size picture of the card, your install code, and Apple's subscription proof if you subscribe.</td><td>To read the card with AI and apply your daily limit.</td></tr>
-<tr><td>Anthropic (Claude), api.anthropic.com</td><td>The same picture, passed on by our server using our account, plus our instructions. If you use your own key, the app sends it directly.</td><td>To read the card name, set, number and finish.</td></tr>
+<tr><td>Anthropic (Claude), api.anthropic.com</td><td>The same picture, passed on by our server using our account, plus our instructions.</td><td>To read the card name, set, number and finish.</td></tr>
 <tr><td>Poketrace, api.poketrace.com</td><td>Card name, number, set, finish and language, using your optional Poketrace key, plus your IP address as part of any internet request.</td><td>To get prices.</td></tr>
 <tr><td>PokemonPriceTracker, pokemonpricetracker.com</td><td>Card name and language, using your optional key, plus your IP address.</td><td>To get prices when Poketrace is at its daily limit.</td></tr>
 <tr><td>Pokemon TCG API (pokemontcg.io) and TCGdex (tcgdex.net)</td><td>Card name, number and set, plus your IP address. No key.</td><td>Free backup price sources.</td></tr>
